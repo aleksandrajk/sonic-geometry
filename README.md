@@ -138,7 +138,7 @@ def onValueChange(channel, sampleIndex, val, prev):
     if channel.name == 'rms':
         op('geo_main/transform1').par.scale = 1.0 + val * 4.0
     return
-
+```
 ---
 
 ## 🧩 Design Patterns & Mapping Strategies
