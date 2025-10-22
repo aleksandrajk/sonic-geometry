@@ -23,8 +23,7 @@ This repository contains a complete README, example Python helper scripts for au
 
 
 
-## 🌀 Project Overview
-[Project Overview](#project-overview)
+## Project Overview
 
 Sonic Geometry is an interactive art project where geometric primitives (points, lines, polygons, parametric surfaces) react to audio using rule-based mappings:
 
@@ -55,8 +54,7 @@ This repository provides:
 
 
 
-## ⚙️ Architecture & Data Flow
-[Architecture & Data Flow](#architecture--data-flow)
+## Architecture & Data Flow
 
 1. **Audio Input** — microphone, loopback, or line-in  
 2. **Python audio process** — captures frames, computes features  
@@ -66,7 +64,7 @@ This repository provides:
 
 
 
-## 🧩 Prerequisites
+## Prerequisites
 
 - **TouchDesigner** (version `2021.10000+` recommended)  
 - **Python 3.9+** (tested on 3.10–3.11)  
@@ -84,7 +82,7 @@ librosa      # optional for offline analysis / extra features
 
 
 
-## ⚙️ Configuration
+## Configuration
 
 You’ll find or create a file named `config.json` in the project root to define parameters such as audio device, sample rate, OSC host/port, etc.
 
@@ -110,7 +108,7 @@ You’ll find or create a file named `config.json` in the project root to define
 
 ---
 
-## 🖥️ TouchDesigner Setup
+## TouchDesigner Setup
 
 ### Suggested Workflow
 
@@ -140,7 +138,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 ```
 ---
 
-## 🧩 Design Patterns & Mapping Strategies
+## Design Patterns & Mapping Strategies
 
 | Audio Feature | Visual Mapping |
 |---------------|----------------|
@@ -157,7 +155,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 
 ---
 
-## ⚡ Performance & Latency Tuning
+## Performance & Latency Tuning
 
 - **Blocksize**: smaller → lower latency (e.g., 256–1024) but higher CPU usage
 - **Onset detection**: use aubio for efficient realtime onsets
@@ -167,7 +165,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 
 ---
 
-## 🧩 Extending the Project
+## Extending the Project
 
 **Ideas for extension:**
 
@@ -200,7 +198,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 
 ---
 
-## Credits
+## License & Credits
 
 **Built with:**
 - TouchDesigner
