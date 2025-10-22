@@ -1,11 +1,10 @@
 # Sonic Geometry
 
-**Interactive art that makes geometry sing.**
 
 Sonic Geometry transforms live audio (music, environment, microphone input) into dynamic 2D/3D visuals using **TouchDesigner + Python**.  
 This repository contains a complete README, example Python helper scripts for audio analysis and OSC messaging, suggested TouchDesigner network notes and snippets, configuration files, and troubleshooting tips to get you started quickly.
 
----
+
 
 ## 📖 Table of Contents
 
@@ -25,7 +24,7 @@ This repository contains a complete README, example Python helper scripts for au
 11. [Troubleshooting](#troubleshooting)
 
 
----
+
 
 ## 🌀 Project Overview
 
@@ -45,7 +44,7 @@ This repository provides:
 
 > The TouchDesigner `.toe` project is **not included** (binary), but this README provides full code and node instructions to reproduce the visuals. Treat this repo as the code + documentation companion for building your own TouchDesigner scene.
 
----
+
 
 ## Features
 
@@ -56,7 +55,7 @@ This repository provides:
 - Mapping suggestions for translating audio features into geometry and animation parameters  
 - Performance and stability tips for installations or laptops  
 
----
+
 
 ## ⚙️ Architecture & Data Flow
 
@@ -66,7 +65,7 @@ This repository provides:
 4. **TouchDesigner** — receives data, drives CHOP/TOP/Geometry parameters to animate visuals  
 5. **Optional feedback** — TouchDesigner sends OSC back to Python for bidirectional interaction  
 
----
+
 
 ## 🧩 Prerequisites
 
@@ -74,16 +73,17 @@ This repository provides:
 - **Python 3.9+** (tested on 3.10–3.11)  
 - **Python packages:** see below  
 
-### Recommended Python Packages (also in `requirements.txt`)
+**Recommended Python Packages (also in `requirements.txt`)**
+```txt
 numpy
 sounddevice
 scipy
 python-osc
-aubio # optional but recommended for beat/onset detection
-librosa # optional for offline analysis / extra features
+aubio        # optional but recommended for beat/onset detection
+librosa      # optional for offline analysis / extra features
+```
 
 
----
 
 ## ⚙️ Configuration
 
@@ -201,7 +201,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 
 ---
 
-## License & Credits
+## Credits
 
 **Built with:**
 - TouchDesigner
