@@ -107,6 +107,7 @@ You’ll find or create a file named `config.json` in the project root to define
     "bands": 12
   }
 }
+```
 
 ---
 
