@@ -15,9 +15,6 @@ This repository contains a complete README, example Python helper scripts for au
 5. [Installation](#installation)
 6. [Configuration](#configuration)
 7. [TouchDesigner Setup](#touchdesigner-setup)
-   - Network overview (CHOPs, DATs, TOPs)
-   - Example DAT Python snippets to receive OSC / TCP
-   - Example recommended node layout
 8. [Design Patterns & Mapping Strategies](#design-patterns--mapping-strategies)
 9. [Performance & Latency Tuning](#performance--latency-tuning)
 10. [Extending the Project](#extending-the-project)
@@ -27,6 +24,7 @@ This repository contains a complete README, example Python helper scripts for au
 
 
 ## 🌀 Project Overview
+[Project Overview](#project-overview)
 
 Sonic Geometry is an interactive art project where geometric primitives (points, lines, polygons, parametric surfaces) react to audio using rule-based mappings:
 
@@ -58,6 +56,7 @@ This repository provides:
 
 
 ## ⚙️ Architecture & Data Flow
+[Architecture & Data Flow](#architecture--data-flow)
 
 1. **Audio Input** — microphone, loopback, or line-in  
 2. **Python audio process** — captures frames, computes features  
